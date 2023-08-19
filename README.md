@@ -51,6 +51,49 @@ I have made a configuration in Visual Studio Code, where I have adjusted the the
 
   Underlined matching brackets and more for Visual Studio Code.
 
+## Environment for java
+
+- [Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack).
+
+  Popular extensions for Java development that provides Java IntelliSense, debugging, testing, Maven/Gradle support, project management and more
+
+- [Spring Boot Extension Pack](https://marketplace.visualstudio.com/items?itemName=vmware.vscode-boot-dev-pack)
+
+  A collection of extensions for developing Spring Boot applications
+
+- [Community Server Connectors](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-community-server-connector)
+
+  Connects vscode with open source community-driven servers and runtimes.
+
+## Configuration
+
+After the Extension Pack for Java is installed, it will ask for the jdk to be installed, so the path must be set in the settings.js file.
+
+```bash
+  "java.configuration.runtimes": [
+  {
+    "name": "JavaSE-20",
+    "path": "/usr/lib/jvm/java-20-openjdk",
+    "default": true
+  }
+  ]
+```
+
+- name: is an alias.
+- path: is the path where the jdk is located
+
+In Archlinux the jdk must be installed as follows:
+
+```bash
+  sudo pacman -S jdk-openjdk
+```
+
+Version:
+
+```bash
+  java -version
+```
+
 ## keyboard shortcuts for linux
 
 | Command           | Linux                                       | Description                            |
@@ -64,6 +107,7 @@ I have made a configuration in Visual Studio Code, where I have adjusted the the
 | Settings          | <kbd>ctrl</kbd><kbd>,</kbd>                 | Opens the settings                     |
 | Project File List | <kbd>ctrl</kbd><kbd>k</kbd><kbd>p</kbd>     | Opens the project file list            |
 | Problems          | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>m</kbd> | Show problems tab                      |
+| Menu command      | <kbd>ctrl</kbd><kbd>shift</kbd><kbd>p</kbd> | Open the command dropdown              |
 
 ## 🔗 Links
 
